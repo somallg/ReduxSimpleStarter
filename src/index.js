@@ -1,4 +1,5 @@
 // import scss
+import 'bootstrap-loader';
 import '../style/style.scss';
 
 import React from 'react';
