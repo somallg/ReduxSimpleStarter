@@ -8,10 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel'
-    }]
+    loaders: [
+      { exclude: /node_modules/, loader: 'babel' },
+      { test: /\.scss$/, loader: "style!css!sass" }
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
